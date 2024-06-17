@@ -1715,7 +1715,7 @@ app.post('/clothes/:id', (req,res) => {
     });
 });
 
-app.post("/nature/:id", (res, req) => {
+app.post("/nature/:id", (req, res) => {
     const {id} = req.params;
     const emoji = nature[id-1];
 
@@ -1728,7 +1728,7 @@ app.post("/nature/:id", (res, req) => {
     });
 });
 
-app.post("/edible/:id", (res, req) => {
+app.post("/edible/:id", (req, res) => {
     const {id} = req.params;
     const emoji = edible[id-1];
 
@@ -1741,7 +1741,7 @@ app.post("/edible/:id", (res, req) => {
     });
 });
 
-app.post("/activity/:id", (res, req) => {
+app.post("/activity/:id", (req, res) => {
     const {id} = req.params;
     const emoji = activity[id-1];
 
@@ -1754,7 +1754,7 @@ app.post("/activity/:id", (res, req) => {
     });
 });
 
-app.post("/travel/:id", (res,req) =>{
+app.post("/travel/:id", (req,res) =>{
      const {id} = req.params;
      const emoji = travel[id-1];
 
@@ -1766,7 +1766,7 @@ app.post("/travel/:id", (res,req) =>{
      });
 });
 
-app.post("/objects/:id", (res, req) => {
+app.post("/objects/:id", (req, res) => {
     const {id} = req.params;
     const emoji = objects[id-1];
 
@@ -1779,7 +1779,7 @@ app.post("/objects/:id", (res, req) => {
     });
 });
 
-app.post("/symbols/:id", (res, req) => {
+app.post("/symbols/:id", (req, res) => {
     const {id} = req.params;
     const emoji = symbols[id-1];
 
